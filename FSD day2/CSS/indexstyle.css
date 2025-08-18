@@ -1,0 +1,13 @@
+/* #p1{background-color: aquamarine;
+color: black;}
+.paragraph{background-color: brown;
+color: blueviolet;font-size: x-large;} */
+div~p{
+    background-color: antiquewhite;color: brown;
+}
+/* p:hover{
+    font-size:xx-large; background-color: brown; color: antiquewhite;
+} */
+p::before{content: "ABES COLLEGE";}
+p::after{content:"Thank you"; background-color: brown;color: blueviolet;}
+p::selection{background-color: chartreuse;}
