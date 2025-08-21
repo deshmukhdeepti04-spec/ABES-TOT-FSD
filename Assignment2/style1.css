@@ -1,0 +1,179 @@
+body {
+  background-color: lightblue; /* Sets the background color of the entire page */
+}
+.my-div {
+  background-color: #f0f8ff; /* Sets the background color of the div using a hex code */
+  padding: 100px;
+ margin: 100px; 
+  align-items: center;
+  border: 1px solid gray;
+  height: auto;
+  width: auto;
+
+
+  /* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+body {
+  background: #dfe3eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+.portfolio {
+  background: #f5f7fb;
+  width: 80%;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px black;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo span {
+  font-weight: normal;
+  color: gray;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.navbar ul li a.active {
+  color: #5d3eff;
+}
+
+.nav-icon {
+  font-size: 20px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.intro {
+  color: #5d3eff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero-text h2 span {
+  font-weight: 600;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.pink {
+  background: #ff4970;
+}
+
+.btn.blue {
+  background: #5d3eff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Hero Image */
+.hero-image {
+  text-align: center;
+  position: relative;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.quote {
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.social {
+  margin: 10px 0;
+}
+
+.social a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+function openWin() {
+  window.open("https://www.w3schools.com");
+}
+
+}
