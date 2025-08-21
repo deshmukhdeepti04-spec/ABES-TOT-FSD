@@ -1,20 +1,48 @@
- .outer-grid {
+.outer-grid {
       display: grid;
       height: 800px;
       width: 650px;
-      grid-template-columns: 4fr 4fr; /* 2 columns */
+        grid-template-columns: repeat(2, 1fr); /*2 columns  */
+        /* grid-template-rows: repeat(2, 2fr); 2 rowss  */
       gap: 20px;
       padding: 20px;
       background: #f0f0f0;
+      grid-template-areas:
+        "header header"
+        /* "sidebar main" */
+        "footer footer";
+    }
+header {
+      grid-area: header;
+      width: 650px;   
+      /* grid-area: header; */
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);/* 6 equal columns */
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      padding: 15px;
+      font-size: 20px;
+    }
+    header div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid rgba(255,255,255,0.4);
     }
 
+    header div:last-child {
+      border-right: none;
+    }
     .outer-item {
+      
       background-color: burlywood;
-      color: white;
+      color: whitesmoke;
       padding: 20px;
       border-radius: 8px;
-      font-size: 18px;
+      font-size: 20px;
             text-align: center;
+            
     }
 
     /* Nested grid */
@@ -31,5 +59,16 @@
       background-color: chocolate;
       padding: 15px;
       border-radius: 6px;
-            font-size: 16px;
+            font-size:14px;
+            text-align: center;
+}
+footer {
+      grid-area: footer;
+      width: 700px;   
+      box-sizing: border-box;
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
     }
